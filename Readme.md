@@ -53,21 +53,46 @@ codigo
 
 ## 3) Añadimos los campos a nuestro model:
 
+<details><summary>🔍 SPOILER:</summary>  
+
+Aquí irá el nuevo Model
+```bash
+codigo
+  );
+```
+
+</details>
+
+
 <br></br>
 [Volver al inicio](#índice) 
 
 ## 4) Formulario:
+
+```bash
+fragmento para el form
+  );
+```
 
 <br></br>
 [Volver al inicio](#índice) 
 
 ## 5) Lista:
 
+```bash
+fragmento para el list
+  );
+```
+
 <br></br>
 [Volver al inicio](#índice) 
 
 ## 6) Kanban: 
 
+```bash
+fragmento para el kanban
+  );
+```
 
 <br></br>
 [Volver al inicio](#índice) 
