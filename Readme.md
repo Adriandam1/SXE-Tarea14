@@ -1,3 +1,5 @@
+## Enunciado
+
 Completa la funcionalidad del módulo indicado en la guía de esta semana y además, añade lo siguiente:
 
 - Un campo para almacenar el perfil de LinkedIn del contacto.
@@ -12,3 +14,27 @@ Lista: Mostrar el estado de actividad junto al nombre del contacto.
 Kanban: Mostrar el enlace de LinkedIn debajo del nombre del contacto.
 
 Debes entregar un archivo comprimido con el código del módulo de modo que sea instalable. El nombre del módulo debe ser Apellido1Apellido2Nombre
+
+
+-------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
