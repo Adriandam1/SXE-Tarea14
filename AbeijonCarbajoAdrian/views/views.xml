@@ -1,0 +1,103 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+<record model="ir.ui.view" id="partner_zodiac.form">
+  <field name="name">partner_zodiac form</field>
+  <field name="model">res.partner</field>
+  <field name="inherit_id" ref="base.view_partner_form"/>
+  <field name="arch" type="xml">
+    <xpath expr="//notebook" position="inside">
+      <page string="Zodiaco y Redes">
+        <group>
+          <field name="f_nac" string="Fecha de nacimiento"/>
+          <field name="edad" string="Edad"/>
+          <field name="signo_zodiacal" string="Signo del zodiaco"/>
+          <field name="linkedin_profile" string="Perfil de LinkedIn"/>
+          <field name="activo_redes" string="Estado en Redes Sociales"/>
+        </group>
+      </page>
+    </xpath>
+  </field>
+</record>
+
+
+<record model="ir.ui.view" id="partner_zodiac.list">
+  <field name="name">partner_zodiac list</field>
+  <field name="model">res.partner</field>
+  <field name="inherit_id" ref="base.view_partner_tree"/>
+  <field name="arch" type="xml">
+    <xpath expr="//tree/field[@name='complete_name']" position="after">
+      <field name="signo_zodiacal" string="Signo"/>
+      <field name="linkedin_profile" string="LinkedIn"/>
+      <field name="activo_redes" string="Estado"/>
+    </xpath>
+  </field>
+</record>
+
+
+    <record model="ir.ui.view" id="partner_zodiac.kanban">
+      <field name="name">partner_zodiac kanban</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.res_partner_kanban_view"/>
+      <field name="arch" type="xml">
+        <xpath expr="//strong[@class='o_kanban_record_title oe_partner_heading']" position="after">
+          <br>  
+            <field name="signo_zodiacal"/>
+          </br>
+      </xpath>
+      </field>
+    </record>
+
+
+
+
+
+
+
+
+
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="partner_zodiac.action_window">
+      <field name="name">partner_zodiac window</field>
+      <field name="res_model">partner_zodiac.partner_zodiac</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="partner_zodiac.action_server">
+      <field name="name">partner_zodiac server</field>
+      <field name="model_id" ref="model_partner_zodiac_partner_zodiac"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="partner_zodiac" id="partner_zodiac.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="partner_zodiac.menu_1" parent="partner_zodiac.menu_root"/>
+    <menuitem name="Menu 2" id="partner_zodiac.menu_2" parent="partner_zodiac.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="partner_zodiac.menu_1_list" parent="partner_zodiac.menu_1"
+              action="partner_zodiac.action_window"/>
+    <menuitem name="Server to list" id="partner_zodiac" parent="partner_zodiac.menu_2"
+              action="partner_zodiac.action_server"/>
+-->
+  </data>
+</odoo>
