@@ -108,9 +108,8 @@ Aquí nuestro view original con su form, list y kanban
       <field name="inherit_id" ref="base.res_partner_kanban_view"/>
       <field name="arch" type="xml">
         <xpath expr="//strong[@class='o_kanban_record_title oe_partner_heading']" position="after">
-          <br>  
+          <br/>  
             <field name="signo_zodiacal"/>
-          </br>
       </xpath>
       </field>
     </record>
@@ -244,7 +243,6 @@ Modificamos *_calcular_edad* y *_calcular_signo* , añadimos la funcion  *_calcu
     <xpath expr="//strong[@class='o_kanban_record_title oe_partner_heading']" position="after">
       <br/>
       <field name="signo_zodiacal" widget="char" string="Signo"/>
-      <br/>
       <field name="linkedin_profile" widget="char" string="LinkedIn"/>
       <field name="activo_redes" widget="statusbar" string="Estado"/>
     </xpath>
